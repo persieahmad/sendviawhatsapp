@@ -3,12 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import firebase from 'firebase';
+
+firebase.initializeApp({
+  apiKey: 'AIzaSyCwpUZ9nZGAho0LA3RfBMbldZO_SSfsm-0',
+  authDomain: 'sendviawhatsapp.firebaseapp.com',
+  projectId: 'sendviawhatsapp',
+  storageBucket: 'sendviawhatsapp.appspot.com',
+  messagingSenderId: '713284648946',
+  appId: '1:713284648946:web:19cf5401968295acae356b',
+  measurementId: 'G-SPW5CHVC4V',
+});
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
