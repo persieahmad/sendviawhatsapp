@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import firebase from 'firebase';
+import * as serviceWorker from './serviceWorker';
 
 firebase.initializeApp({
   apiKey: 'AIzaSyCwpUZ9nZGAho0LA3RfBMbldZO_SSfsm-0',
@@ -26,3 +27,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+serviceWorker.register();
